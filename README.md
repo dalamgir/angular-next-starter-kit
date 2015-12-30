@@ -9,7 +9,7 @@ Angular 2.0 brings in quite a few new concepts and design patterns. However, Ang
 * Typescript integration
 * Webpack bundling system with multiple loaders (sass, html, typescript)
 * Gulp integration (currently only one task to provide auto documentation)
-* Karma integration with Mocha, Chai and multiple browser launchers (Chrome, PhantomJS) and code coverage
+* Karma integration with Mocha, Chai, multiple browser launchers (Chrome, PhantomJS) and code coverage
 * SocketIO client
 * Useful interfaces to create components and services
 
@@ -32,3 +32,10 @@ Angular 2.0 brings in quite a few new concepts and design patterns. However, Ang
 * Chai
 * Protractor
 
+# Getting Started 
+
+## Clone the current repository
+
+```
+git clone 
+```
