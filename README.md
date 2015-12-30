@@ -9,7 +9,7 @@ The goals of this project is simple:
   * Create a `component` to use the data
   * Compose larger components using smaller components
 
-The developer ####DOES NOT have to worry about the following:
+The developer **DOES NOT** have to worry about the following:
 * Configuring a `build system`
 * Configuring `unit tests`, `end-to-end tests`, `code coverage`
 * Provide `static analysis` and configure `typescript`
@@ -142,3 +142,22 @@ npm run build
 |-- tslint.json                 | Configuration used by the tslint-loader 
 |-- webpack.config.js           | Webpack's global configuration file
 ```
+
+# Creating a Service
+
+Suppose we want to create a service that gets **Stock Quote** from [http://dev.markitondemand.com/MODApis/](Dev Markit API). The service will take a **symbol** and return a **quote**.
+
+### First define a `Quote` object
+
+```
+export interface Quote {
+ name: string,
+ symbol: string,
+ lastPrice: number,
+ high: number,
+ low: number,
+ open: number
+}
+```
+
+Since `typescript` is used, the fields in the Quote object can be strongly typed.
