@@ -5,8 +5,8 @@ Angular 2.0 brings in quite a few new concepts and design patterns. However, Ang
 
 The goals of this project is simple:
 * Focus on the application logic by:
-  * Create a `service` to get some data
-  * Create a `component` to use the data
+  * Create a `service` to get some data (see **Creating a Service** below)
+  * Create a `component` to use the data (see **Creating a Component** below)
   * Compose larger components using smaller components
 
 The developer **DOES NOT** have to worry about the following:
@@ -190,3 +190,5 @@ angular.module('app.services').service('stockService', StockService);
 ```
 
 Now, this service is **ready to be injected into any component**.
+
+# Creating a Component
