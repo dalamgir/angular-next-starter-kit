@@ -179,7 +179,7 @@ export class StockService extends HttpService {
 }
 ```
 
-The `getQuote` method takes a `string` argument and returns an `ng.IPromise` which should eventually resolve to a `Quote` object. To read mode about angular's definitely typed objects, visit [https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/angularjs](angularjs.d.ts). It is very clear from the code what this service does and what the method returns.
+The `getQuote` method takes a `string` argument and returns an `ng.IPromise` which should eventually resolve to a `Quote` object. To read mode about angular's definitely typed objects, visit [https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/angularjs](AngularJS DefinitelyTyped). It is very clear from the code what this service does and what the method returns.
 
 ### Lastly, register the service
 
@@ -189,4 +189,4 @@ An angular module `app.services` is readily available:
 angular.module('app.services').service('stockService', StockService);
 ```
 
-Now, **this service is ready to be injected into any component**.
+Now, this service is **ready to be injected into any component**.
