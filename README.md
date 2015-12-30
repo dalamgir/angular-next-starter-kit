@@ -10,13 +10,12 @@ Angular 2.0 brings in quite a few new concepts and design patterns. However, Ang
 * Webpack bundling system with multiple loaders (sass, html, typescript)
 * Gulp integration (currently only one task to provide auto documentation)
 * Karma integration with Mocha, Chai, multiple browser launchers (Chrome, PhantomJS) and code coverage
-* SocketIO client
+* Interfaces and APIs to create testable and reusable components
 * Various kinds of service interface
   * Http Service
   * Socket Service using Socket IO
   * SOAP Service using soap client
   * Buffer Service using ProtobufJS
-* Useful interfaces to create components and services
 
 # Framework
 
@@ -90,11 +89,44 @@ npm run build
 
 ```
 |-- app                         | Root directory for the application
+
 |---- common                    | All modules common to the application
 |------ bindingTypes.ts         | Module containing Angular binding types
 |------ component.ts            | Interface for a BaseComponent
 |------ service.ts              | Interfaces for HttpService, SocketService, SoapService and BufferService
-|---- components
-|---- core
+|
+|---- components                | Root directory for all the components. Any component should go in here
+|------ dropdown                | Sample implementation of a component
+|-------- dropdown.html         | Template file for the component using Angular's template syntax
+|-------- dropdown.scss         | Scoped styles for the component. This can now just be `required` in
+|-------- dropdown.spec.ts      | Unit test spec file for the component. This should be local to the component
+|-------- dropdown.ts           | Implementation of the component itself
+|
+|---- core                      | Utility modules that bootstrap the application
+|------ bootstrap.ts            | Loads in all the other utility modules and bootstrap's Angular
+|------ components.ts           | Holds references to all the components
+|------ modules.ts              | Registers all the modules
+|------ services.ts             | Holds references to all the services
+|------ tests.ts                | Imports all the necessary modules needed for testing
+|
 |---- services
-|---- utilities
+|------ stock-service.ts        | Reference implementation of an HttpService using JSONP
+|
+|---- utilities                 | Any utilities used across the application
+|
+|---- app.d.ts                  | Typescript definition file for the application
+|---- index.html                | Main html file for the application
+|---- index.scss                | Main css file for the application
+|
+|-- build                       | Contains the bundled application
+|-- docs                        | Contains all auto generated documentation 
+|-- fonts                       | Contains application wide fonts
+|-- images                      | Contains application wide images
+|-- gulpfile                    | Gulp task file. Currently only one task to generate documentation is provided
+|-- karma.conf.js               | Configuration file for the karma test runner
+|-- package.json                | Contains NPM dependencies and application commands
+|-- tsconfig.json               | Typescript compiler configuration
+|-- tsd.json                    | Contains references to definitely typed libraries
+|-- tslint.json                 | Configuration used by the tslint-loader 
+|-- webpack.config.js           | Webpack's global configuration file
+```
