@@ -8,4 +8,16 @@ Angular 2.0 brings in quite a few new concepts and design patterns. However, Ang
 * Angular 1.4.x
 * Bootstrap (sass) 3.3.6
 * Socket IO Client 1.3.7
+* Typescript v1.7.5
+
+# Build
+
+* Webpack
+** raw-loader
+** file-loader
+** url-loader
+** bootstrap-loader
+** postcss-loader
+* Gulp
+* HTML
 
