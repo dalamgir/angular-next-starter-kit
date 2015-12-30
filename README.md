@@ -210,7 +210,7 @@ Suppose we want to create a drop down component. Intuitively, the component shou
 </dropdown>
 ```
 
-1. Create a template (dropdown.html):
+##### Create a template (dropdown.html):
 
 ```
 <div component="DropDown" class="dropdown">
@@ -227,7 +227,7 @@ Suppose we want to create a drop down component. Intuitively, the component shou
 </div>
 ```
 
-2. Create a scoped stylesheet (dropdown.scss):
+##### Create a scoped stylesheet (dropdown.scss):
 ```
 [component="DropDown"] {
   &.dropdown {
@@ -238,6 +238,6 @@ Suppose we want to create a drop down component. Intuitively, the component shou
 }
 ```
 
-3. Create the component implementation (dropdown.ts) by extending the BaseComponent:
+##### Create the component implementation (dropdown.ts) by extending the BaseComponent:
 
 **See downdown.ts reference implementation**
