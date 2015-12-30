@@ -1,0 +1,11 @@
+<div component="DropDown" class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{ ctrl.name }}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li ng-repeat="item in ctrl.items">
+            <a href="{{ item.href }}">{{ item.label }}</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,1 @@
+require('../services/stock-service.ts');
