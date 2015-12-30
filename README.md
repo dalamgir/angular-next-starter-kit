@@ -200,3 +200,44 @@ A component should be composed of 4 files
  * [component-name].scss     - Scoped styles for the component
  * [component-name].spec.ts  - Unit test for the component
  * [component-name].ts       - Implementation of the component logic
+
+Suppose we want to create a drop down component. Intuitively, the component should be used like this:
+
+```
+<dropdown
+  name="My Dropdown"
+  items="[{ href: '#', label: 'Item 1' },{ href: '#', label: 'Item 2' }]">
+</dropdown>
+```
+
+1. Create a template (dropdown.html):
+
+```
+<div component="DropDown" class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"     
+            aria-expanded="true">
+        {{ ctrl.name }}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li ng-repeat="item in ctrl.items">
+            <a href="{{ item.href }}">{{ item.label }}</a>
+        </li>
+    </ul>
+</div>
+```
+
+2. Create a scoped stylesheet (dropdown.scss):
+```
+[component="DropDown"] {
+  &.dropdown {
+    a {
+      color: pink !important;
+    }
+  }
+}
+```
+
+3. Create the component implementation (dropdown.ts) by extending the BaseComponent:
+
+**See downdown.ts reference implementation**
