@@ -3,6 +3,18 @@ Seed project for developing angular 1.x applications in preparation for migratin
 
 Angular 2.0 brings in quite a few new concepts and design patterns. However, Angular 2.0 is a few months away from being production ready. For those starting off with an Angular 1.x application but want to use the concepts of Angular 2.0 and some of the technologies used in Angular 2.0 today, then this starter kit may serve the purpose.
 
+The goals of this project is simple:
+* Focus on the application logic by:
+  * Create a `service` to get some data
+  * Create a `component` to use the data
+  * Compose larger components using smaller components
+
+It tries to take care of the following hassels:
+* Configuring a `build system`
+* Configuring `unit tests`, `end-to-end tests`, `code coverage`
+* Provide `static analysis` and configure `typescript`
+* Automatically generate `documentation`
+
 # Features
 
 * Complete scaffolding with Angular 1.4.x
@@ -89,7 +101,7 @@ npm run build
 
 ```
 |-- app                         | Root directory for the application
-
+|
 |---- common                    | All modules common to the application
 |------ bindingTypes.ts         | Module containing Angular binding types
 |------ component.ts            | Interface for a BaseComponent
