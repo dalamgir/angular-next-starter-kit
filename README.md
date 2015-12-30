@@ -11,6 +11,11 @@ Angular 2.0 brings in quite a few new concepts and design patterns. However, Ang
 * Gulp integration (currently only one task to provide auto documentation)
 * Karma integration with Mocha, Chai, multiple browser launchers (Chrome, PhantomJS) and code coverage
 * SocketIO client
+* Various kinds of service interface
+  * Http Service
+  * Socket Service using Socket IO
+  * SOAP Service using soap client
+  * Buffer Service using ProtobufJS
 * Useful interfaces to create components and services
 
 # Framework
@@ -80,3 +85,16 @@ To produce a bundled application, run the following command:
 ```
 npm run build
 ```
+
+# Directory Structure
+
+```
+|-- app                         | Root directory for the application
+|---- common                    | All modules common to the application
+|------ bindingTypes.ts         | Module containing Angular binding types
+|------ component.ts            | Interface for a BaseComponent
+|------ service.ts              | Interfaces for HttpService, SocketService, SoapService and BufferService
+|---- components
+|---- core
+|---- services
+|---- utilities
