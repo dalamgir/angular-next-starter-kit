@@ -54,3 +54,29 @@ The following command will continue to install all dependencies:
 ```
 npm run setup
 ```
+
+## Run the application
+
+To run the application with a development server with hot module reload, run the following command:
+
+```
+npm run serve
+```
+
+## Run the tests
+
+To run the unit tests for the application, run the following command:
+
+```
+npm test
+```
+
+Integration tests are on their way.
+
+## Package the application
+
+To produce a bundled application, run the following command:
+
+```
+npm run build
+```
