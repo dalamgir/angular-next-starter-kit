@@ -9,7 +9,7 @@ The goals of this project is simple:
   * Create a `component` to use the data
   * Compose larger components using smaller components
 
-It tries to take care of the following hassels:
+The developer ####DOES NOT have to worry about the following:
 * Configuring a `build system`
 * Configuring `unit tests`, `end-to-end tests`, `code coverage`
 * Provide `static analysis` and configure `typescript`
