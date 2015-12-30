@@ -145,7 +145,7 @@ npm run build
 
 # Creating a Service
 
-Suppose we want to create a service that gets **Stock Quote** from [http://dev.markitondemand.com/MODApis/](Dev Markit API). The service will take a **symbol** and return a **quote**.
+Suppose we want to create a service that gets **Stock Quote** from [Dev Markit API](http://dev.markitondemand.com/MODApis/). The service will take a **symbol** and return a **quote**.
 
 Create a file under `app/services/stock-service`. All services should go under `app/services`.
 
@@ -179,7 +179,7 @@ export class StockService extends HttpService {
 }
 ```
 
-The `getQuote` method takes a `string` argument and returns an `ng.IPromise` which should eventually resolve to a `Quote` object. To read mode about angular's definitely typed objects, visit [https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/angularjs](AngularJS DefinitelyTyped). It is very clear from the code what this service does and what the method returns.
+The `getQuote` method takes a `string` argument and returns an `ng.IPromise` which should eventually resolve to a `Quote` object. To read mode about angular's definitely typed objects, visit [AngularJS DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/angularjs). It is very clear from the code what this service does and what the method returns.
 
 ### Lastly, register the service
 
@@ -192,3 +192,11 @@ angular.module('app.services').service('stockService', StockService);
 Now, this service is **ready to be injected into any component**.
 
 # Creating a Component
+
+All components should go under `app/components/[component-name]`.
+
+A component should be composed of 4 files
+ * [component-name].html     - Template for the component
+ * [component-name].scss     - Scoped styles for the component
+ * [component-name].spec.ts  - Unit test for the component
+ * [component-name].ts       - Implementation of the component logic
