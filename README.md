@@ -147,6 +147,8 @@ npm run build
 
 Suppose we want to create a service that gets **Stock Quote** from [http://dev.markitondemand.com/MODApis/](Dev Markit API). The service will take a **symbol** and return a **quote**.
 
+Create a file under `app/services/stock-service`. All services should go under `app/services`.
+
 ### First define a `Quote` object
 
 ```
@@ -160,4 +162,31 @@ export interface Quote {
 }
 ```
 
-Since `typescript` is used, the fields in the Quote object can be strongly typed.
+Since `typescript` is used, the fields in the Quote object can be strongly typed. The interface should be exported since it may be used in other parts of the application. These interfaces can also be moved to a common file.
+
+### Create an extension of HttpService interface
+
+An HttpService interface is already provided. Angular's `$http` service is automatically injected. All that needs to be done is a new class should be created **implementing the service logic**.
+
+```
+export class StockService extends HttpService {
+
+ getQuote(symbol: string): ng.IPromise<Quote> {
+  var url = `http://dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol=${symbol}&callback=JSON_CALLBACK`;
+  return this.jsonp(url);
+ }
+
+}
+```
+
+The `getQuote` method takes a `string` argument and returns an `ng.IPromise` which should eventually resolve to a `Quote` object. To read mode about angular's definitely typed objects, visit [https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/angularjs](angularjs.d.ts). It is very clear from the code what this service does and what the method returns.
+
+### Lastly, register the service
+
+An angular module `app.services` is readily available:
+
+```
+angular.module('app.services').service('stockService', StockService);
+```
+
+Now, **this service is ready to be injected into any component**.
