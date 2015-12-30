@@ -34,8 +34,23 @@ Angular 2.0 brings in quite a few new concepts and design patterns. However, Ang
 
 # Getting Started 
 
+To get started using the seed project, complete the following steps:
+
 ## Clone the current repository
 
 ```
-git clone 
+git clone https://github.com/alamgird/angular-next-starter-kit.git
+```
+
+## Install all dependencies
+
+There are two kinds of dependencies in this project:
+
+1. `NPM` dependencies which are used for development as well as application code
+2. `Typescript` dependencies which are the definitely typed files for some of the `NPM` modules
+
+The following command will continue to install all dependencies:
+
+```
+npm run setup
 ```
