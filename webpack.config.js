@@ -10,7 +10,8 @@ module.exports = {
     entry: './app/core/bootstrap.ts',
 
     output: {
-        filename: './build/bundle.js'
+        path: __dirname + '/build',
+        filename: 'bundle.js'
     },
 
     devtool: 'source-map',
