@@ -34,6 +34,7 @@
   "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.4.8",
+    "autoprefixer": "^6.3.3",
     "bootstrap-loader": "^1.0.1",
     "chai": "^3.4.1",
     "constants": "0.0.2",
