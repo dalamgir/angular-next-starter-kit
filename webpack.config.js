@@ -72,7 +72,9 @@ module.exports = {
             template: './app/index.html',
             inject: false
         }),
-
+        new webpack.ProvidePlugin({
+            jQuery: "jquery"
+        }),
         new ngAnnotatePlugin({
             add: true
         })
