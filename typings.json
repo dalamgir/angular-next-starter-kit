@@ -1,0 +1,21 @@
+{
+  "name": "nightwing",
+  "version": false,
+  "ambientDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160328125810",
+    "assertion-error": "github:DefinitelyTyped/DefinitelyTyped/assertion-error/assertion-error.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "bluebird": "github:DefinitelyTyped/DefinitelyTyped/bluebird/bluebird.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "bootstrap": "github:DefinitelyTyped/DefinitelyTyped/bootstrap/bootstrap.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "karma": "github:DefinitelyTyped/DefinitelyTyped/karma/karma.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "log4js": "github:DefinitelyTyped/DefinitelyTyped/log4js/log4js.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "mime": "github:DefinitelyTyped/DefinitelyTyped/mime/mime.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a",
+    "socket.io-client": "github:DefinitelyTyped/DefinitelyTyped/socket.io-client/socket.io-client.d.ts#dc9dabe74a5be62613b17a3605309783a12ff28a"
+  }
+}

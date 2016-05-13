@@ -4,7 +4,7 @@
   "description": "Starter project and application development framework using future proof cutting edge web technologies",
   "main": "app.js",
   "scripts": {
-    "setup": "npm install && tsd install",
+    "setup": "npm install && typings install",
     "clean-docs": "rimraf docs/**/*",
     "clean-build": "rimraf build/**/*",
     "clean": "npm run clean-docs && npm run clean-build",
@@ -33,7 +33,7 @@
   "author": "Daiyan Alamgir",
   "license": "ISC",
   "devDependencies": {
-    "angular-mocks": "^1.4.8",
+    "angular-mocks": "^1.5.3",
     "autoprefixer": "^6.3.3",
     "bootstrap-loader": "^1.0.1",
     "chai": "^3.4.1",
@@ -66,10 +66,10 @@
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "ts-loader": "^0.7.2",
-    "tsd": "^0.6.5",
     "tslint": "^3.2.1",
     "tslint-loader": "^2.1.0",
-    "typescript": "^1.7.5",
+    "typings": "^0.7.12",
+    "typescript": "^1.8.9",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9",
     "webpack-config": "^3.1.0",
@@ -77,7 +77,7 @@
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {
-    "angular": "^1.4.8",
+    "angular": "^1.5.3",
     "bootstrap": "^3.3.6",
     "bootstrap-sass": "^3.3.6",
     "jquery": "^2.1.4",
