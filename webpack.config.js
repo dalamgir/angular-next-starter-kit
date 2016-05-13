@@ -68,7 +68,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Nightwing - An Application Framework',
-            filename: './build/index.html',
+            filename: './index.html',
             template: './app/index.html',
             inject: false
         }),
