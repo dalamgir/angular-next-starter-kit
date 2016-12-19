@@ -17,8 +17,8 @@ class DropDownController {
 
     static $inject = ['$scope', '$attrs', 'stockService'];
 
-    constructor($scope: ng.IScope, $attrs, stockService: StockService) {
-        this.items = $scope.$eval($attrs.items);
+    constructor($scope: ng.IScope, $attrs: ng.IAttributes, stockService: StockService) {
+        this.items = $scope.$eval($attrs['items']);
 
         stockService.getQuote('AAPL').then( (response: ng.IHttpPromiseCallbackArg<Quote>) => {
 
